@@ -1,0 +1,11 @@
+version: "3"
+services:
+  https-proxy:
+    build: http-proxy 
+    ports:
+      - "443:443"
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+ 
